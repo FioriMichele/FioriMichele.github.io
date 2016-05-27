@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="it"> <!--lingua impostata italiano-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>TIPOLOGIE DI HACKING</title>
+
+		<!-- Bootstrap -->
+		<link href="bootstrap.min.css" rel="stylesheet">
+		
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		
+		
+		<!--inserisco un nuovo foglio css creato da me--><!--
+		<link href="css/nuovo_css.css" rel="stylesheet">-->
+		
+		<link href="css2.css" rel="stylesheet">
+		
+		
+		<!--inserisco un nuovo fogio js creato da me--><!--
+		<script type="text/javascript" src="js/nuovo_js.js"></script>-->
+		
+		<script type="text/javascript" src="js2.js"></script>		
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js non funziona se guardate la pagina attraverso file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body> 
+		
+		<!--INIZIO DEL DIV CENTRALE (div_principale)-->
+		<div class="div_principale">
+				
+<!--			<div class="barra_navigazione">
+				<a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home"></span> home </a> 
+				<a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-user"></span> about </a> 
+				<a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-book"></span> fonti </a> 					
+				<a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-wrench"></span> plug in </a>
+			</div>
+-->
+			<div class="barra_navigazione_mobile">
+				<span class="navbar-brand"><a class="icona_menu_verticale_mobile"><img src="mobile_menu_icon.png" id="js:mobile_menu_icon" OnClick="javascript:mostra_menu_verticale_mobile()"></a><div  id="js:mobile_menu_icon_close" class="div_mobile_menu_icon_close"><a class="icona_menu_verticale_mobile_close"><img src="mobile_menu_icon_close.png" OnClick="javascript:nascondi_menu_verticale_mobile()"></a></div></span>
+				<!--<div id="a" class="a"><span class="navbar-brand"><a class="icona_menu_verticale_mobile_close"><img src="media/photo/mobile_menu_icon_close.png" id="js:mobile_menu_icon_close" ></a></span></div>-->
+				<a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home"></span>  </a> 
+				<a class="navbar-brand" href="about.html"><span class="glyphicon glyphicon-user"></span>  </a> 
+				<a class="navbar-brand" href="fonti.html"><span class="glyphicon glyphicon-book"></span>  </a> 						
+				<a class="navbar-brand" href="plug_in.html"><span class="glyphicon glyphicon-wrench"></span>  </a>
+			</div>	
+
+			
+			<div class="barra_navigazione">
+				<a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home"></span> home </a> 
+				<a class="navbar-brand" href="about.html"><span class="glyphicon glyphicon-user"></span> about </a> 
+				<a class="navbar-brand" href="fonti.html"><span class="glyphicon glyphicon-book"></span> fonti </a> 					
+				<a class="navbar-brand" href="plug_in.html"><span class="glyphicon glyphicon-wrench"></span> plug in </a>			
+			</div>
+
+
+		
+		
+		
+			<div class="div_slider_foto" id="js:div_slider_foto">			
+				<!--slider di foto che funge da copertina del sito-->		
+				<div class="slider" id="slider">
+					<img src="foto_slider_1.jpg"/>
+					<img src="foto_slider_2.jpg"/>
+					<img src="foto_slider_3.jpg"/>
+					<img src="foto_slider_4.jpg"/>
+				</div>
+				<!--fine slider-->
+			</div>
+		
+			<div class="spaziatura_mobile">
+				<br>
+				<br>
+				<br>
+			</div>	
+		
+			<!--"briciole di pane", indicano il percorso della pagina si cui si è-->
+			<ol class="breadcrumb">
+				<li><a href="index.html">Home</a></li>
+				<li class="active">Tipologie di hacking</li>
+			</ol>
+		
+		
+		
+			<!--inizio menù verticale-->
+			<div class="div_menu_verticale" id="js:div_menu_verticale">
+			
+			
+				<!--icona del menù che viene vista solo in mobile
+				<div class="icona_menu_verticale_mobile">
+					<a href="#"><img src="media/photo/Menu-64.png" id="js:mobile_menu_icon" OnClick="javascript:mostra_menu_verticale_mobile()"></a>
+				</div>
+				
+				-->
+				
+				
+							
+				<!--inizio vero e proprio del menù verticale, è stato diviso con un sottodiv rispetto al div_menu_verticale per poter farlo sparire in mobile, per farlo riapparire cliccando l' icona del menù-->
+				<div class="menu_verticale_mobile"  id="js:menu_verticale"> <!--fornisco un id per poter far sparire/apparire tutto il menù con javascript-->
+					
+					<ul class="nav nav-pills nav-stacked">
+					
+						
+						<br>
+						<!--inizio del box di ricerca interna al sito-->
+						<form action="http://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+							<input type="hidden" name="si" value="62781425">
+							<input type="hidden" name="pid" value="r">
+							<input type="hidden" name="n" value="0">
+							<input type="hidden" name="_charset_" value="">
+							<input type="hidden" name="bcd" value="&#247;">		
+							<!--label di testo con pulsante incorporato-->
+							<div class="input-group">
+									<input type="text" class="form-control" name="query" placeholder="ricerca nel sito">
+									<span class="input-group-btn">
+										<button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+									</span>
+							</div>
+						</form>
+						<!-- fine del box di ricerca interna al sito -->
+						
+						<br>
+						<br>
+
+						<li><a href="index.html">home</a></li>
+						<li><a href="introduzione.html">introduzione</a></li>
+						<li class="active"><a href="tipologie.html">tipologie di hacking</a></li>
+						<li><a href="politica.html">hacking e politica</a></li>
+						<li><a href="hacking_team.html">hacking team</a></li>
+						<li><a href="grandi_hacker.html">i grandi hacker</a></li>
+					</ul>				
+					<br>
+				<br>
+				<br>
+				</div>
+				
+
+				
+				
+				
+				
+				
+				
+			 	<div class="list-group" id="js:elenco_siti_consigliati">
+					<a class="list-group-item">SITI CORRELATI</a>
+					<a href="http://www.hackingteam.it/" class="list-group-item">hacking team</a>
+					<a href="http://thehackernews.com/" class="list-group-item">hacker news</a>
+					<a href="https://www.inforge.net/xi/" class="list-group-item">inforge forum</a>
+					<a href="http://hackforums.net/" class="list-group-item">hack forum</a>
+				</div> 
+				
+					
+				
+			</div>
+			
+		
+		
+		<!--
+			<br>
+			<br>-->
+			
+		
+			<div class="div_testo" id="js:div_testo">
+				<p class="titolo">tipologie di hacking<p>
+				<p>Di seguito sono elencate alcune attivit&agrave; tipiche dell'hacking. Alcune di queste, se eseguite su sistemi proprietari o su cui non si &egrave; autorizzati a operare, possono comportare compromissioni, perdita di garanzia o violazione della legge (reati informatici).</p>
+				<br>
+				<p class="sottotitolo">Incremento di prestazioni (hardware)<p>
+				<span class="immagine"><img src="Hardware.jpg"></span>
+				<p>I circuiti fisici di un computer funzionano secondo le leggi dell'elettronica: &egrave; possibile alterarne il funzionamento al fine di ottenere un incremento delle prestazioni. Nella pratica vengono apportati miglioramenti che, non essendo stati ancora sperimentati dal produttore, non possono essere inclusi nel prodotto al momento della vendita.
+Esempio di queste tecniche &egrave; il forzare un masterizzatori di CD a lavorare al doppio della velocit&agrave;, rimuovendo un resistore. Altri esempi riguardano alcune schede madri di personal computer sulle quali, tramite la modifica di connettori detti jumper, si &egrave; possibile alterare i parametri di frequenza del processore installato, facendo s&igrave; che questo lavori a maggiori prestazioni. Quest'ultima pratica &egrave; chiamata overclocking (i jumper sono stati sostituiti, nelle moderne schede madri, da apposite funzioni software del BIOS anch'esse talora alterabili). L'incremento di prestazioni pu&ograve; tuttavia comportare un surriscaldamento eccessivo delle componenti.</p>
+				<br>
+				<p class="sottotitolo">Rimozione di limitazioni al funzionamento<p>
+				<p>I produttori di componenti elettronici (hardware) o di applicazioni (software) possono aggiungere ai loro prodotti funzioni, non necessariamente documentate in fase di vendita, che limitano l'utilizzo dei prodotti stessi in specifiche situazioni: ad esempio, possono essere inseriti meccanismi atti a impedire l'aggiunta al sistema di componenti non certificati, oppure atti a controllare l'originalit&agrave; dei programmi utilizzati. L'elusione di tali limitazioni rientra nelle attivit&agrave; di hacking: in taluni casi l'azione &egrave; legale (nel caso, ad esempio, in cui si richiedano permessi di amministrazione per accedere a tutte le funzionalit&agrave; del sistema operativo mobile Android), in altri casi &egrave; svolta in maniera illecita per aggirare l'acquisto delle licenze (pirateria informatica).</p>
+				<br>
+				<p class="sottotitolo">Alterazione della struttura di un programma<p>
+				<span class="immagine_dx"><img src="software.jpg"></span>
+				<p>Un sistema operativo o, in generale, un qualsiasi software, si basa su una strutturata sequenza di operazioni da far compiere all'elaboratore elettronico su cui viene installato; nel caso dei programmi open source questa sequenza di operazioni &egrave; volutamente resa nota e in vari casi &egrave; anche alterabile liberamente, ma nel software cosiddetto protetto o proprietario non viene autorizzata nessuna possibilit&agrave; di intervento, nemmeno al fine di correggere malfunzionamenti. Nella pratica &egrave; per&ograve; possibile modificare il software portandolo ad eseguire le operazioni in una sequenza diversa da quella scelta dal produttore fino ad ottenere il &quot;salto&quot; (cio&egrave; la mancata esecuzione) di alcune operazioni; programmi specificatamente realizzati per alterare la struttura di un software provocando il salto delle operazioni che dovrebbero verificare l'originalit&agrave; della licenza di un'applicazione vengono ad esempio chiamati crack. Questa pratica pu&ograve; violare la licenza di utilizzo di un software rendendone illegale l'utilizzo, anche se legalmente acquistato.</p>
+				<br>
+				<p class="sottotitolo">Aggiunta di funzioni ad un programma<p>
+				<p>Come ad un software possono essere tolte delle funzioni, cos&igrave; possono esserne aggiunte di nuove; anche in questo caso sul software protetto o proprietario tale operazione non &egrave; consentita, ma tecnicamente questa operazione &egrave; in genere possibile. Questa pratica pu&ograve; violare la licenza di utilizzo di un software rendendone illegale l'utilizzo, anche se legalmente acquistato.</p>
+				
+				
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+			
+			
+			
+			
+			
+			
+			</div>
+			
+			
+		
+			<div class="div_interno_acapo"></div>
+
+		
+		
+	
+		</div>
+
+		
+
+		
+		
+		<script>
+			$(document).ready(function(){
+				$('[data-toggle="tooltip"]').tooltip();
+			});
+			$(function () {
+				$('[data-toggle="popover"]').popover()
+			})
+		</script>	
+		<!-- jQuery (necessario per i plugin Javascript di Bootstrap) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<!-- Includi tutti i plugin compilati (sotto), o includi solo i file individuali necessari -->
+		<script src="bootstrap.min.js"></script>
+		
+	</body>
+</html>

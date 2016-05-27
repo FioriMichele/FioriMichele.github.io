@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="it"> <!--lingua impostata italiano-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>HACKING TEAM</title>
+
+		<!-- Bootstrap -->
+		<link href="bootstrap.min.css" rel="stylesheet">
+		
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		
+		
+		<!--inserisco un nuovo foglio css creato da me--><!--
+		<link href="css/nuovo_css.css" rel="stylesheet">-->
+		
+		<link href="css2.css" rel="stylesheet">
+		
+		
+		<!--inserisco un nuovo fogio js creato da me--><!--
+		<script type="text/javascript" src="js/nuovo_js.js"></script>-->
+		
+		<script type="text/javascript" src="js2.js"></script>		
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js non funziona se guardate la pagina attraverso file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body> 
+		
+		<!--INIZIO DEL DIV CENTRALE (div_principale)-->
+		<div class="div_principale">
+				
+<!--			<div class="barra_navigazione">
+				<a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home"></span> home </a> 
+				<a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-user"></span> about </a> 
+				<a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-book"></span> fonti </a> 					
+				<a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-wrench"></span> plug in </a>
+			</div>
+-->
+			<div class="barra_navigazione_mobile">
+				<span class="navbar-brand"><a class="icona_menu_verticale_mobile"><img src="mobile_menu_icon.png" id="js:mobile_menu_icon" OnClick="javascript:mostra_menu_verticale_mobile()"></a><div  id="js:mobile_menu_icon_close" class="div_mobile_menu_icon_close"><a class="icona_menu_verticale_mobile_close"><img src="mobile_menu_icon_close.png" OnClick="javascript:nascondi_menu_verticale_mobile()"></a></div></span>
+				<!--<div id="a" class="a"><span class="navbar-brand"><a class="icona_menu_verticale_mobile_close"><img src="media/photo/mobile_menu_icon_close.png" id="js:mobile_menu_icon_close" ></a></span></div>-->
+				<a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home"></span>  </a> 
+				<a class="navbar-brand" href="about.html"><span class="glyphicon glyphicon-user"></span>  </a> 
+				<a class="navbar-brand" href="fonti.html"><span class="glyphicon glyphicon-book"></span>  </a> 						
+				<a class="navbar-brand" href="plug_in.html"><span class="glyphicon glyphicon-wrench"></span>  </a>
+			</div>	
+
+			
+			<div class="barra_navigazione">
+				<a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home"></span> home </a> 
+				<a class="navbar-brand" href="about.html"><span class="glyphicon glyphicon-user"></span> about </a> 
+				<a class="navbar-brand" href="fonti.html"><span class="glyphicon glyphicon-book"></span> fonti </a> 					
+				<a class="navbar-brand" href="plug_in.html"><span class="glyphicon glyphicon-wrench"></span> plug in </a>			
+			</div>
+
+
+		
+		
+		
+			<div class="div_slider_foto" id="js:div_slider_foto">			
+				<!--slider di foto che funge da copertina del sito-->		
+				<div class="slider" id="slider">
+					<img src="foto_slider_1.jpg"/>
+					<img src="foto_slider_2.jpg"/>
+					<img src="foto_slider_3.jpg"/>
+					<img src="foto_slider_4.jpg"/>
+				</div>
+				<!--fine slider-->
+			</div>
+		
+			<div class="spaziatura_mobile">
+				<br>
+				<br>
+				<br>
+			</div>	
+		
+			<!--"briciole di pane", indicano il percorso della pagina si cui si è-->
+			<ol class="breadcrumb">
+				<li><a href="index.html">Home</a></li>
+				<li class="active">Hacking team</li>
+			</ol>
+		
+		
+		
+			<!--inizio menù verticale-->
+			<div class="div_menu_verticale" id="js:div_menu_verticale">
+			
+			
+				<!--icona del menù che viene vista solo in mobile
+				<div class="icona_menu_verticale_mobile">
+					<a href="#"><img src="media/photo/Menu-64.png" id="js:mobile_menu_icon" OnClick="javascript:mostra_menu_verticale_mobile()"></a>
+				</div>
+				
+				-->
+				
+				
+							
+				<!--inizio vero e proprio del menù verticale, è stato diviso con un sottodiv rispetto al div_menu_verticale per poter farlo sparire in mobile, per farlo riapparire cliccando l' icona del menù-->
+				<div class="menu_verticale_mobile"  id="js:menu_verticale"> <!--fornisco un id per poter far sparire/apparire tutto il menù con javascript-->
+					
+					<ul class="nav nav-pills nav-stacked">
+					
+						
+						<br>
+						<!--inizio del box di ricerca interna al sito-->
+						<form action="http://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+							<input type="hidden" name="si" value="62781425">
+							<input type="hidden" name="pid" value="r">
+							<input type="hidden" name="n" value="0">
+							<input type="hidden" name="_charset_" value="">
+							<input type="hidden" name="bcd" value="&#247;">		
+							<!--label di testo con pulsante incorporato-->
+							<div class="input-group">
+									<input type="text" class="form-control" name="query" placeholder="ricerca nel sito">
+									<span class="input-group-btn">
+										<button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+									</span>
+							</div>
+						</form>
+						<!-- fine del box di ricerca interna al sito -->
+						
+						<br>
+						<br>
+
+						<li><a href="index.html">home</a></li>
+						<li><a href="introduzione.html">introduzione</a></li>
+						<li><a href="tipologie.html">tipologie di hacking</a></li>
+						<li><a href="politica.html">hacking e politica</a></li>
+						<li class="active"><a href="introduzione.html">hacking team</a></li>
+						<li><a href="grandi_hacker.html">i grandi hacker</a></li>
+					</ul>				
+				<br>
+				<br>
+				<br>
+				</div>
+				
+
+				
+				
+				
+				
+				
+				
+			 	<div class="list-group" id="js:elenco_siti_consigliati">
+					<a class="list-group-item">SITI CORRELATI</a>
+					<a href="http://www.hackingteam.it/" class="list-group-item">hacking team</a>
+					<a href="http://thehackernews.com/" class="list-group-item">hacker news</a>
+					<a href="https://www.inforge.net/xi/" class="list-group-item">inforge forum</a>
+					<a href="http://hackforums.net/" class="list-group-item">hack forum</a>
+				</div> 
+				
+					
+				
+			</div>
+			
+		
+		
+		<!--
+			<br>
+			<br>-->
+			
+		
+			<div class="div_testo" id="js:div_testo">
+				<p class="titolo">hacking team<p>
+				<span class="immagine"><img src="HT.png" title="Il logo della 'hacking team'"></span>
+				<p>Hacking Team &egrave; una societ&agrave; di Information technology con sede a Milano che vende servizi di intrusione offensiva e sorveglianza a governi, organi di polizia e servizi segreti di tutto il mondo (sono stati costruiti rapporti e relazioni anche a diretto riporto del Presidente degli Stati Uniti d'America, lavorando con NSA, CIA ed FBI). I suoi sistemi di controllo remoto vengono utilizzati soprattutto per la lotta al terrorismo, al narcotrafficointernazionale e alle mafie, in quanto permettono di monitorare le comunicazioni degli utenti di Internet, decifrare i loro file e le loro e-mail criptati, registrare le conversazioni telefoniche, Skype e altre comunicazioni Voice over IP, di attivare a distanza microfoni e videocamere sui computer presi di mira, tenere sotto controllo telefoni cellulari (telefonate, rubriche, SMS, spostamenti, calendari ecc.), di leggere e rilevare anomalie nel mondo dei social network.   La societ&agrave; &egrave; stata criticata per aver fornito tali servizi a governi scarsamente rispettosi dei diritti umani.  Hacking Team dichiara di essere in grado di disabilitare i software distribuiti in caso di uso non etico.  Nel giugno 2014 un rapporto dell'Universit&agrave; di Toronto espose dettagliatamente l'architettura e la funzionalit&agrave; del software Remote Control System (RCS) di Hacking Team.  Nel luglio 2015 la societ&agrave; &egrave; rimasta a sua volta vittima di attacco hacker, per effetto del quale molto materiale altamente riservato &egrave; stato reso di pubblico dominio. Hacking Team fu avviata nel 2003 da due programmatori italiani, Alberto Ornaghi e Marco Valleri. Prima che la societ&agrave; nascesse i due programmatori avevano creato un insieme di applicazioni per monitorare e manipolare PC da remoto; il programma Ettercap era adottato da hacker, ma anche da ditte per verificare i propri sistemi di sicurezza. Successivamente il programma fu acquistato dalla questura di Milano.  Era nata Hacking Team, e divenne &quot;il primo fornitore di hacking software commerciale per la polizia.&quot;  Nel settembre 2011 l'azienda milanese si relaziona ai massimi livelli con la societ&agrave; Booz Allen Hamilton: il vicepresidente Mike McConnell, potentissimo zar dell'intelligence di George W. Bush, &egrave; l'uomo che incarna uno dei massimi esponenti dell'intelligence mondiale, essendo stato anche direttore dell'NSA e direttore del National Intelligence (a diretto consiglio del Presidente degli Stati Uniti d'America nel contrasto al terrorismo).  Nel 2013 la societ&agrave; ha avviato una trattativa con il governo dell'Arabia Saudita per essere acquisita dallo stesso.   In alcuni incontri Hacking Team ha mostrato la capacit&agrave; della sua tecnologia di bloccare una centrale atomica in Iran, regime di ispirazione sciita, nemico storico dei sunniti e della famiglia reale saudita (un attacco che Stati Uniti e Israele insieme fecero proprio contro l'Iran e la centrale nucleare di Natanz, andando a disegnare la pagina pi&ugrave; importante nella storia delcyberterrorism: lasciando i sospetti sulle relazioni, anche commerciali, fra Hacking Team e i servizi di intelligence di questi Paesi. Della questione Natanz si &egrave; occupato anche il regista premio Oscar Alex Gibney con il suo documentario Zero Days, in concorso per l'Orso d'Oro al Festival internazionale del cinema di Berlino nel febbraio 2016). La trattativa con il governo saudita ha subito diversi rallentamenti, anche a causa della discordanza sulle quote di distribuzione dei dividendi. La societ&agrave; era stata valutata di altissimo valore militare ed economico, ma la famiglia reale araba non voleva andare oltre i 40 milioni di spesa per acquisirla. Fra i mediatori dell'operazione c'&egrave; stato Wafic Said, il terzo arabo per patrimonio personale tra i miliardari in Gran Bretagna. Altro fattore di rallentamento l'allontanamento dal vertice dei servizi di intelligence del regime saudita del principe Bandar bin Sultan, storico trait d'union tra le intelligence occidentali (Hacking Team aveva intessuto relazioni con lui) e il re con la lobby saudita (precedentemente Bandar bin Sultan, da ambasciatore arabo negli USA, &egrave; stato anche consigliere di George W. Bush sui temi della sicurezza). Sulle cifre dell'operazione restano comunque molti dubbi, in quanto non si hanno documentazioni precise al riguardo, ma solo scarse notizie.</p>
+
+				
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+			
+			
+			
+			
+			
+			
+			</div>
+			
+			
+		
+			<div class="div_interno_acapo"></div>
+
+		
+		
+	
+		</div>
+
+		
+
+		
+		
+		<script>
+			$(document).ready(function(){
+				$('[data-toggle="tooltip"]').tooltip();
+			});
+			$(function () {
+				$('[data-toggle="popover"]').popover()
+			})
+		</script>	
+		<!-- jQuery (necessario per i plugin Javascript di Bootstrap) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<!-- Includi tutti i plugin compilati (sotto), o includi solo i file individuali necessari -->
+		<script src="bootstrap.min.js"></script>
+		
+	</body>
+</html>

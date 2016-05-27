@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="it"> <!--lingua impostata italiano-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>HACKING E POLITICA</title>
+
+		<!-- Bootstrap -->
+		<link href="bootstrap.min.css" rel="stylesheet">
+		
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		
+		
+		<!--inserisco un nuovo foglio css creato da me--><!--
+		<link href="css/nuovo_css.css" rel="stylesheet">-->
+		
+		<link href="css2.css" rel="stylesheet">
+		
+		
+		<!--inserisco un nuovo fogio js creato da me--><!--
+		<script type="text/javascript" src="js/nuovo_js.js"></script>-->
+		
+		<script type="text/javascript" src="js2.js"></script>		
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js non funziona se guardate la pagina attraverso file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body> 
+		
+		<!--INIZIO DEL DIV CENTRALE (div_principale)-->
+		<div class="div_principale">
+				
+<!--			<div class="barra_navigazione">
+				<a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home"></span> home </a> 
+				<a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-user"></span> about </a> 
+				<a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-book"></span> fonti </a> 					
+				<a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-wrench"></span> plug in </a>
+			</div>
+-->
+			<div class="barra_navigazione_mobile">
+				<span class="navbar-brand"><a class="icona_menu_verticale_mobile"><img src="mobile_menu_icon.png" id="js:mobile_menu_icon" OnClick="javascript:mostra_menu_verticale_mobile()"></a><div  id="js:mobile_menu_icon_close" class="div_mobile_menu_icon_close"><a class="icona_menu_verticale_mobile_close"><img src="mobile_menu_icon_close.png" OnClick="javascript:nascondi_menu_verticale_mobile()"></a></div></span>
+				<!--<div id="a" class="a"><span class="navbar-brand"><a class="icona_menu_verticale_mobile_close"><img src="media/photo/mobile_menu_icon_close.png" id="js:mobile_menu_icon_close" ></a></span></div>-->
+				<a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home"></span>  </a> 
+				<a class="navbar-brand" href="about.html"><span class="glyphicon glyphicon-user"></span>  </a> 
+				<a class="navbar-brand" href="fonti.html"><span class="glyphicon glyphicon-book"></span>  </a> 						
+				<a class="navbar-brand" href="plug_in.html"><span class="glyphicon glyphicon-wrench"></span>  </a>
+			</div>	
+
+			
+			<div class="barra_navigazione">
+				<a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home"></span> home </a> 
+				<a class="navbar-brand" href="about.html"><span class="glyphicon glyphicon-user"></span> about </a> 
+				<a class="navbar-brand" href="fonti.html"><span class="glyphicon glyphicon-book"></span> fonti </a> 					
+				<a class="navbar-brand" href="plug_in.html"><span class="glyphicon glyphicon-wrench"></span> plug in </a>			
+			</div>
+
+
+		
+		
+		
+			<div class="div_slider_foto" id="js:div_slider_foto">			
+				<!--slider di foto che funge da copertina del sito-->		
+				<div class="slider" id="slider">
+					<img src="foto_slider_1.jpg"/>
+					<img src="foto_slider_2.jpg"/>
+					<img src="foto_slider_3.jpg"/>
+					<img src="foto_slider_4.jpg"/>
+				</div>
+				<!--fine slider-->
+			</div>
+		
+			<div class="spaziatura_mobile">
+				<br>
+				<br>
+				<br>
+			</div>	
+		
+			<!--"briciole di pane", indicano il percorso della pagina si cui si è-->
+			<ol class="breadcrumb">
+				<li><a href="index.html">Home</a></li>
+				<li class="active">Hacking e politica</li>
+			</ol>
+		
+		
+		
+			<!--inizio menù verticale-->
+			<div class="div_menu_verticale" id="js:div_menu_verticale">
+			
+			
+				<!--icona del menù che viene vista solo in mobile
+				<div class="icona_menu_verticale_mobile">
+					<a href="#"><img src="media/photo/Menu-64.png" id="js:mobile_menu_icon" OnClick="javascript:mostra_menu_verticale_mobile()"></a>
+				</div>
+				
+				-->
+				
+				
+							
+				<!--inizio vero e proprio del menù verticale, è stato diviso con un sottodiv rispetto al div_menu_verticale per poter farlo sparire in mobile, per farlo riapparire cliccando l' icona del menù-->
+				<div class="menu_verticale_mobile"  id="js:menu_verticale"> <!--fornisco un id per poter far sparire/apparire tutto il menù con javascript-->
+					
+					<ul class="nav nav-pills nav-stacked">
+					
+						
+						<br>
+						<!--inizio del box di ricerca interna al sito-->
+						<form action="http://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+							<input type="hidden" name="si" value="62781425">
+							<input type="hidden" name="pid" value="r">
+							<input type="hidden" name="n" value="0">
+							<input type="hidden" name="_charset_" value="">
+							<input type="hidden" name="bcd" value="&#247;">		
+							<!--label di testo con pulsante incorporato-->
+							<div class="input-group">
+									<input type="text" class="form-control" name="query" placeholder="ricerca nel sito">
+									<span class="input-group-btn">
+										<button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+									</span>
+							</div>
+						</form>
+						<!-- fine del box di ricerca interna al sito -->
+						
+						<br>
+						<br>
+
+						<li><a href="index.html">home</a></li>
+						<li><a href="introduzione.html">introduzione</a></li>
+						<li><a href="tipologie.html">tipologie di hacking</a></li>
+						<li class="active"><a href="politica.html">hacking e politica</a></li>
+						<li><a href="hacking_team.html">hacking team</a></li>
+						<li><a href="grandi_hacker.html">i grandi hacker</a></li>
+					</ul>				
+				<br>
+				<br>
+				<br>
+				</div>
+				
+
+				
+				
+				
+				
+				
+				
+			 	<div class="list-group" id="js:elenco_siti_consigliati">
+					<a class="list-group-item">SITI CORRELATI</a>
+					<a href="http://www.hackingteam.it/" class="list-group-item">hacking team</a>
+					<a href="http://thehackernews.com/" class="list-group-item">hacker news</a>
+					<a href="https://www.inforge.net/xi/" class="list-group-item">inforge forum</a>
+					<a href="http://hackforums.net/" class="list-group-item">hack forum</a>
+				</div> 
+				
+					
+				
+			</div>
+			
+		
+		
+		<!--
+			<br>
+			<br>-->
+			
+		
+			<div class="div_testo" id="js:div_testo">
+				<p class="titolo">hacking e politica<p>
+				<span class="immagine_dx"><img src="pugno.png"></span>
+
+				<p>In ambito internazionale, &egrave; in atto una discussione sugli aspetti politici e sociali della cosiddetta etica-hacker, in particolare sulla possibilit&agrave; che essa esprima istanze di empowerment dal basso. Alcuni studiosi, infatti, ritengono che alcune pratiche hacker distribuiscano e democratizzino funzioni e poteri di controllo e di produzione &ldquo;biopolitica&rdquo; e che siano, quindi, potenzialmente capaci di produrre innovazione politica e istituzionale. A dispetto di un contesto socio-politico dominato da imprese e corporazioni oligopolistiche, le pratiche hackers quali piattaforme indipendenti, progetti open-source di cittadinanza &ldquo;scientifica&rdquo; e le nuove esperienze dei makers o del bio-hacking sembrano quasi preludere ad un nuovo &ldquo;fai-da-te&rdquo; biopolitico.</p>
+				<p>In casi come questi il giudizio morale non pu&ograve; che essere contestuale. Dobbiamo chiederci: quali sono gli scopi (o meglio gli effetti), dell&rsquo;operazione di hackeraggio? I vantaggi sono collettivi? Quali direzioni vengono impressi all&rsquo;industria del software in generale? L&rsquo;abito non fa il monaco, e nemmeno il cappello.</p>
+				
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+			
+			
+			
+			
+			
+			
+			</div>
+			
+			
+		
+			<div class="div_interno_acapo"></div>
+
+		
+		
+	
+		</div>
+
+		
+
+		
+		
+		<script>
+			$(document).ready(function(){
+				$('[data-toggle="tooltip"]').tooltip();
+			});
+			$(function () {
+				$('[data-toggle="popover"]').popover()
+			})
+		</script>	
+		<!-- jQuery (necessario per i plugin Javascript di Bootstrap) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<!-- Includi tutti i plugin compilati (sotto), o includi solo i file individuali necessari -->
+		<script src="bootstrap.min.js"></script>
+		
+	</body>
+</html>
